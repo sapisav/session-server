@@ -21,7 +21,7 @@ const injectUserMW = (req, res, next) => {
   req.currentUser.sessionToken = next();
 };
 
-const basicAuthInstance = basicAuth({ authorizer });
+const basicAuthInstance = new basicAuth({ authorizer });
 
 function basicAuthWrapper(req, res, next) {
   //TODO: Check if session exists

@@ -20,6 +20,7 @@ router.use((req, res, next) => {
 
 router.get("/profile", function(req, res, next) {
   res.json({ title: "Express" });
+  res.end("ok");
 });
 
 module.exports = router;
