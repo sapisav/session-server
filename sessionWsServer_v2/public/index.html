@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      .d-none {
+        display: none;
+      }
+    </style>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <h1>Express</h1>
+    <p>Welcome to Express</p>
+
+    <div id="login-form" class="d-none">
+      <input type="text" id="login-username" />
+      <input type="password" id="login-password" />
+      <button id="do-login">Login</button>
+    </div>
+
+    <div id="menu" class="d-none">
+      <button onclick="getProfile()">Profile</button>
+      <button onclick="getFriends()">My Friends</button>
+      <button onclick="connect()">Subscribe</button>
+    </div>
+
+    <script src="javascripts/me-controller.js"></script>
+    <script src="javascripts/subscribe-notifications.js"></script>
+  </body>
+</html>
